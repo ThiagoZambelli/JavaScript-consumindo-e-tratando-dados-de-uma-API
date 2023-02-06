@@ -75,3 +75,8 @@
     line-height: 18px;
     color: var(--vermelho);
 }
+.campo__erro{
+    text-align: center;
+    padding-top: 1em;
+    color: var(--laranja);
+}

@@ -13,6 +13,8 @@
 // console.log(consultaCEP);
 
 async function buscaCep (numero){
+    var mensagemErro = document.getElementById('erro');
+    mensagemErro.innerHTML = "";
     try{
         let consultaCEP = await fetch(`https://viacep.com.br/ws/${numero}/json/`);
         let consultaCEPConvertido = await consultaCEP.json();
@@ -32,6 +34,7 @@ async function buscaCep (numero){
         console.log(consultaCEPConvertido)
         return consultaCEPConvertido;
     }catch (erro){
+        mensagemErro.innerHTML = `<p>CEP inválido. Tente novamente</p>`
         console.log(erro);
     }
 }

@@ -9,3 +9,5 @@ Repositório do treinamento "JavaScript: Consumindo e tratando dados de uma API"
 * Consumo de API
 * JSON
 * Compreender o funcionamento das promises
+* Try/Catch 
+* async/await
